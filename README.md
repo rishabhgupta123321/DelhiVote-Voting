@@ -37,7 +37,7 @@ Building DelhiVote was an exciting leap into Web3 governance! Studying the contr
 
 ## Usage
 - Compile and deploy `DelhiVote.sol` in Remix (Solidity 0.8.20).
-- Vote for a proposal via MetaMask or ethers.js.
+- Vote for a proposal via MetaMask.
 - Check the winning proposal using `getWinningProposal`.
 - Verify on Etherscan.
 

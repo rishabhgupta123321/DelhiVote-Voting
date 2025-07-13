@@ -1,55 +1,48 @@
-# DelhiVote-Voting
+# DelhiVote
+A decentralized voting smart contract for ETHGlobal New Delhi 2025.
 
- A decentralized voting smart contract for ETHGlobal New Delhi 2025.
+## Overview
+As a Solidity beginner, I built DelhiVote to explore Web3 governance, using a voting template from Solidity by Example. I studied the code to understand structs, mappings, and user interactions, customized the contract name and proposals, and deployed it on Sepolia for ETHGlobal.
 
- ## Overview
- DelhiVote is a transparent voting system for predefined proposals, preventing double-voting. As a Solidity beginner, I studied this contract to learn mappings and user interactions, customizing proposals for my portfolio.
+## Deployment
+- **Network**: Sepolia Testnet
+- **Contract Address**: [https://sepolia.etherscan.io/address/0xd751cea6971bc0e213aed278ef6dfba49fce412c](https://sepolia.etherscan.io/address/0xd751cea6971bc0e213aed278ef6dfba49fce412c)
 
- ## Deployment
- - **Network**: Sepolia Testnet
- - **Contract Address**: https://sepolia.etherscan.io/address/0xd751cea6971bc0e213aed278ef6dfba49fce412c
+## Features
+- **Proposals**: Predefined options ("Proposal A", "Proposal B").
+- **Voting**: Users vote once for a proposal, tracked to prevent double-voting.
+- **Result**: View the winning proposal with the highest votes.
+- **Security**: Uses safe math (Solidity ^0.8.20) and input validation.
 
- ## Features
- - Proposals: "Proposal A", "Proposal B"
- - Functions: Vote for a proposal, view winning proposal
- - Prevents double-voting    
+## Code Breakdown
+`DelhiVote.sol` implements a voting system:                                                 
+- **Constructor**: Initializes the owner and two proposals ("Proposal A", "Proposal B").
+- **Vote**: Allows one vote per user, tracked via a `voters` mapping, and emits a `Voted` event.
+- **GetWinningProposal**: Returns the proposal with the most votes by iterating through a `Proposal` struct array.
+- **Security**: Uses `require` to prevent double-voting and invalid proposals.
 
- ## Source
- Inspired by Solidity by Example (https://github.com/raineorshine/solidity-by-example).
+I learned how structs organize data, mappings track user actions, and loops determine results. Deploying via Remix was a smooth experience.
 
- ## Learning Journey
- I’m passionate about Web3 and explored this contract to understand governance use cases. I customized the proposals, renamed the contract, and deployed it to Sepolia to prepare for ETHGlobal.
+## Files
+- **`DelhiVote.sol`**: Defines the voting contract.
+- **`LICENSE`**: MIT License, allowing open-source use.
+- **`.gitignore`**: Node.js template with `artifacts/` for clean commits.
+- **`README.md`**: This file, detailing my project and journey.
 
- ## Usage
- 1. Deploy to initialize proposals.
- 2. Vote via Remix or ethers.js.
- 3. Check the winning proposal with `getWinningProposal`.
+## Source
+Built using [Solidity by Example’s voting template](https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting), licensed under MIT. I customized the contract name and proposals while learning from the code.
+  
+## My Journey
+Building DelhiVote was an exciting leap into Web3 governance! Studying the contract taught me about data structures and user interaction in Solidity. Deploying to Sepolia and verifying on Etherscan was a proud moment. I named it “DelhiVote” to celebrate my journey toward ETHGlobal New Delhi 2025.
 
- ## License
- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. A decentralized voting smart contract for ETHGlobal New Delhi 2025.
+## Usage
+- Compile and deploy `DelhiVote.sol` in Remix (Solidity 0.8.20).
+- Vote for a proposal via MetaMask or ethers.js.
+- Check the winning proposal using `getWinningProposal`.
+- Verify on Etherscan.
 
- ## Overview
- DelhiVote is a transparent voting system for predefined proposals, preventing double-voting. As a Solidity beginner, I studied this contract to learn mappings and user interactions, customizing proposals for my portfolio.
+## License
+Licensed under the MIT License—see [LICENSE](LICENSE).
 
- ## Deployment
- - **Network**: Sepolia Testnet
- - **Contract Address**: [Paste Sepolia address here]
-
- ## Features
- - Proposals: "Proposal A", "Proposal B"
- - Functions: Vote for a proposal, view winning proposal
- - Prevents double-voting    
-
- ## Source
- Inspired by Solidity by Example (https://github.com/raineorshine/solidity-by-example).
-
- ## Learning Journey
- I’m passionate about Web3 and explored this contract to understand governance use cases. I customized the proposals, renamed the contract, and deployed it to Sepolia to prepare for ETHGlobal.
-
- ## Usage
- 1. Deploy to initialize proposals.
- 2. Vote via Remix or ethers.js.
- 3. Check the winning proposal with `getWinningProposal`.
-
- ## License
- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
+## Contact
+Email me at rishabhgupta78470@gmail.com or find me on X @rishabh_guptaz. Excited to connect at ETHGlobal New Delhi 2025!

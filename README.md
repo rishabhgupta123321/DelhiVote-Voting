@@ -7,7 +7,7 @@
 
  ## Deployment
  - **Network**: Sepolia Testnet
- - **Contract Address**: [Paste Sepolia address here]
+ - **Contract Address**: https://sepolia.etherscan.io/address/0xd751cea6971bc0e213aed278ef6dfba49fce412c
 
  ## Features
  - Proposals: "Proposal A", "Proposal B"
